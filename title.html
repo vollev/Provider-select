@@ -24,15 +24,16 @@
  type="email"> <br>
 <!-- Поле ввода email --> <br>
 <br>
-<select name="Выбор желаемых услуг" size="3" multiple form="nubexForm"> <!-- Список выбора услуг -->
-	<option value="fttb"> Интернет FTTB </option>
-	<option value="dsl"> Интернет xDSL </option>
-	<option value="tv"> Интерактивное ТВ </option>
-	<option value="iptel"> IP телефония </option>
-	<option value="sttel"> Стационарный телефон </option>
-	<option value="mtel"> Мобильная связь </option>
-	<option value="minet"> Мобильный интернет </option>
-</select> <br> <br>
+<p><b>Выбор желаемых услуг</b></p> <!-- Список выбора услуг -->
+
+	<p><input type="checkbox" name="fttb" value="a1"> Интернет FTTB <br>
+	<input type="checkbox" name="dsl" value="a2"> Интернет xDSL <br>
+	<input type="checkbox" name="tv" value="a3"> Интерактивное ТВ <br>
+	<input type="checkbox" name="iptel" value="a4"> IP телефония <br>
+	<input type="checkbox" name="sttel" value="a5"> Стационарный телефон <br>
+	<input type="checkbox" name="mtel" value="a6"> Мобильная связь <br>
+	<input type="checkbox" name="minet" value="a7"> Мобильный интернет </p>
+ <br> <br>
   <input name="open_date" required="required" type="datetime-local"> Дата начала оказания услуг <br>
 <!-- Поле ввода даты желаемого начала оказания услуг --> <br>
   <input valve="Отправить" type="submit"><!-- Кнопка отправки введенных данных --> </form>
