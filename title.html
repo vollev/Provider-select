@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html dir="ltr">
+<head>
+  <meta content="text/html; charset=utf-8"
+ http-equiv="content-type">
+  <title> Главная </title>
+</head>
+<body>
+<div id="wrapper">
+<div style="text-align: center;"> <header> </header></div>
+<h1 style="text-align: center;"> Выбор провайдера </h1>
+<!-- Заголовок страницы -->
+<p style="text-align: center;"> Мы поможем выбрать оптимального поставщика услуг </p>
+<!-- Какой то текст --><br>
+<form> <input name="first_name" placeholder="Ваше имя"
+ required="required" type="text"> <br>
+<!-- Поле ввода имени --><br>
+  <br>
+  <input name="tel_number" placeholder="Ваш номер телефона +7...."
+ required="required" type="tel"> <br>
+<!-- Поле ввода номера телефона --> <br>
+<br>
+  <input name="email_adress" placeholder="Введите Ваш email" required="required"
+ type="email"> <br>
+<!-- Поле ввода email --> <br>
+<br>
+<select name="Выбор желаемых услуг" size="3" multiple form="nubexForm"> <!-- Список выбора услуг -->
+	<option value="fttb"> Интернет FTTB </option>
+	<option value="dsl"> Интернет xDSL </option>
+	<option value="tv"> Интерактивное ТВ </option>
+	<option value="iptel"> IP телефония </option>
+	<option value="sttel"> Стационарный телефон </option>
+	<option value="mtel"> Мобильная связь </option>
+	<option value="minet"> Мобильный интернет </option>
+</select> <br> <br>
+  <input name="open_date" required="required" type="datetime-local"> Дата начала оказания услуг <br>
+<!-- Поле ввода даты желаемого начала оказания услуг --> <br>
+  <input valve="Отправить" type="submit"><!-- Кнопка отправки введенных данных --> </form>
+</div>
+</body>
+</html>
