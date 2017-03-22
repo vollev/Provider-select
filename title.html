@@ -15,27 +15,36 @@
 <form> <input name="first_name" placeholder="Ваше имя"
  required="required" type="text"> <br>
 <!-- Поле ввода имени --><br>
-  <br>
   <input name="tel_number" placeholder="Ваш номер телефона +7...."
  required="required" type="tel"> <br>
 <!-- Поле ввода номера телефона --> <br>
-<br>
   <input name="email_adress" placeholder="Введите Ваш email" required="required"
  type="email"> <br>
-<!-- Поле ввода email --> <br>
-<br>
+<!-- Поле ввода email --> 
 <p><b>Выбор желаемых услуг</b></p> <!-- Список выбора услуг -->
-
 	<p><input type="checkbox" name="fttb" value="a1"> Интернет FTTB <br>
 	<input type="checkbox" name="dsl" value="a2"> Интернет xDSL <br>
+	<label for="speed"> Необходимая скорость (Мбит/с):</label> <br> <!-- Ползунок выбора скорости -->
+<input type="range" name="speed" id="speed" list="speed_list" 
+  step="5" min="5" max="100"> <!-- Ползунок выбора скорости -->
+<datalist id="speed_list"> <!-- Ползунок выбора скорости -->
+  <option>25</option> <!-- Ползунок выбора скорости -->
+  <option>50</option> <!-- Ползунок выбора скорости -->
+  <option>75</option> <!-- Ползунок выбора скорости -->
+  <option>100</option> <!-- Ползунок выбора скорости -->
+</datalist>  <br>
 	<input type="checkbox" name="tv" value="a3"> Интерактивное ТВ <br>
 	<input type="checkbox" name="iptel" value="a4"> IP телефония <br>
 	<input type="checkbox" name="sttel" value="a5"> Стационарный телефон <br>
 	<input type="checkbox" name="mtel" value="a6"> Мобильная связь <br>
 	<input type="checkbox" name="minet" value="a7"> Мобильный интернет </p>
- <br> <br>
+ <p><b>Выбор категории абонента</b></p> <!-- Список выбор категории абонента -->
+ 	<p> <label><input type="checkbox" name="btb" value="b1"> Абонент юридическое лицо </label> <br> 
+	<label><input type="checkbox" name="btc" value="b2"> Абонент физическое лицо </label> </p>
+ <br>
   <input name="open_date" required="required" type="datetime-local"> Дата начала оказания услуг <br>
 <!-- Поле ввода даты желаемого начала оказания услуг --> <br>
+<textarea rows="5" cols="50" name="b1" placeholder="Дополнительные пожелания"></textarea> <!-- Поле ввода дополнительных данных --> <br>
   <input valve="Отправить" type="submit"><!-- Кнопка отправки введенных данных --> </form>
 </div>
 </body>
